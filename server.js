@@ -17,6 +17,8 @@ app.listen(port, () => {
   console.log("Listening on PORT", port);
 });
 
+app.get('/',(req,res)=>{res.send("HI")})
+
 const connect_DB = async () => {
   try {
     await mongoose.connect(process.env.DB_URL);
