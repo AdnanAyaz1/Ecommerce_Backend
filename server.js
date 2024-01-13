@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 dotenv.config({ path: "./config.env" });
 import ProductsRouter from "./Routes/ProductsRoutes.js";
 import UserRouter from "./Routes/UserRoutes.js";
-import OrderRouter from "./Routes/OrderRoutes.js";F
+import OrderRouter from "./Routes/OrderRoutes.js";
 import {v2 as cloudinary} from 'cloudinary'
 
 cloudinary.config({ 
