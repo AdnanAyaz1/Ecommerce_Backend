@@ -21,6 +21,7 @@ app.listen(port, () => {
 app.use("/api/products", ProductsRouter);
 app.use("/api/users", UserRouter);
 app.use("/api/orders", OrderRouter);
+app.use("/",(req,res)=>{res.send("HI")})
 
 const connect_DB = async () => {
   try {
