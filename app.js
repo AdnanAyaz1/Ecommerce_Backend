@@ -21,17 +21,8 @@ app.use(
 );
 
 app.use(cors({}));
-// const __dirname = path.dirname(new URL(import.meta.url).pathname);
 
-// app.use(express.static(path.join(__dirname, "./client/dist")));
-// app.get("*", (req, res) => {
-//   res.sendFile(path.join(__dirname, "./client/dist/index.html"));
-// });
 
-// Routes
-app.use("/api/products", ProductsRouter);
-app.use("/api/users", UserRouter);
-app.use("/api/orders", OrderRouter);
 
 // Error Handler
 app.use(GlobalErrorHAndler);

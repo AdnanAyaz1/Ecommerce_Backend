@@ -17,7 +17,10 @@ app.listen(port, () => {
   console.log("Listening on PORT", port);
 });
 
-app.get('/',(req,res)=>{res.send("HI")})
+// Routes
+app.use("/api/products", ProductsRouter);
+app.use("/api/users", UserRouter);
+app.use("/api/orders", OrderRouter);
 
 const connect_DB = async () => {
   try {
