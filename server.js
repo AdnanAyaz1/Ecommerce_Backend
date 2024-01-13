@@ -2,6 +2,9 @@ import mongoose from "mongoose";
 import { app } from "./app.js";
 import dotenv from "dotenv";
 dotenv.config({ path: "./config.env" });
+import ProductsRouter from "./Routes/ProductsRoutes.js";
+import UserRouter from "./Routes/UserRoutes.js";
+import OrderRouter from "./Routes/OrderRoutes.js";F
 import {v2 as cloudinary} from 'cloudinary'
 
 cloudinary.config({ 

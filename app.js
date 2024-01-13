@@ -1,7 +1,5 @@
 import express from "express";
-import ProductsRouter from "./Routes/ProductsRoutes.js";
-import UserRouter from "./Routes/UserRoutes.js";
-import OrderRouter from "./Routes/OrderRoutes.js";
+
 import { GlobalErrorHAndler } from "./Utils/GlobalErrorHandler.js";
 import cookieParser from "cookie-parser";
 import fileUpload from "express-fileupload";
